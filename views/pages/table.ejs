@@ -1,0 +1,51 @@
+<div ng-app = "ngclickApp" ng-controller = "ngclickCtrl">
+
+    <h2>Attendance Sheet</h2>
+
+<!--    <div ng-init = "getDBdata()"></div>-->
+
+        <table>
+            <tr>
+                <th><input type = "button" style = "cursor:pointer" value="Check In" ng-click="checkIn()"></th>
+            </tr>
+            <tr>
+                <td>{{res.time}}</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th><input type = "button" style = "cursor:pointer" value="Check Out" ng-click="checkOut()"></th>
+            </tr>
+            <tr>
+                <td>{{res.updatedAt}}</td>
+            </tr>
+        </table>
+
+      <table>
+             <tr>
+                 <th>Date</th>
+                 <th>Check In</th>
+                 <th>Check Out</th>
+                 <th>Total</th>
+             </tr>
+             <tr>
+                 <td>2019-02-18</td>
+                 <td>10:10</td>
+                 <td>06:30</td>
+                 <td>09:10</td>
+             </tr>
+             <tr>
+                <td>2019-02-18</td>
+                <td>10:10</td>
+                <td>06:30</td>
+                <td>09:10</td>
+            </tr>
+            <tr>
+                <td>2019-02-18</td>
+                <td>10:10</td>
+                <td>06:30</td>
+                <td>09:10</td>
+            </tr>
+         </table>
+        </div>
