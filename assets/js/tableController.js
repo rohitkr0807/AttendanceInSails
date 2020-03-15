@@ -32,22 +32,22 @@ app.controller('ngclickCtrl' , function ($scope,$http)
       };
 
       $http(req).then(function(response){
-        console.log("response: ", response.data)
+        console.log("response: ", response.data);
          $scope.res = response.data;
         });
 
       };
 
-      // $scope.getDBdata = function() {
-      //     $http({
-      //       method : 'GET',
-      //       url : '/timeinput',
-      //       data : 'parameters'
-      //     }).then(function success(response){
-      //           console.log(response.data)
-      //
-      //     });
-      // };
+      $scope.getDBdata = function() {
+          $http({
+            method : 'GET',
+            url : '/timeinput',
+            data : 'parameters'
+          }).then(function success(response){
+                console.log(response.data)
+
+          });
+      };
 
 
       // $scope.IsDisabled = true;
