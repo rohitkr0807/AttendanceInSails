@@ -44,8 +44,8 @@ app.controller('ngclickCtrl' , function ($scope,$http)
             url : '/timeinput',
             data : 'parameters'
           }).then(function success(response){
-                console.log(response.data)
-
+            console.log(response.data);
+            $scope.res = response.data;
           });
       };
 
